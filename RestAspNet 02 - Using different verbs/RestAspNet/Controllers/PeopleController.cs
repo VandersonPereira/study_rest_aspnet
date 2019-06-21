@@ -12,23 +12,23 @@ namespace RestAspNet.Controllers
 
         public PeopleController(IPersonService personService) => _personService = personService;
 
-        // GET api/person
+        // GET api/people
         [HttpGet()]
         public IActionResult GetAll() => Ok(_personService.FindAll());
 
-        // GET api/person/5
+        // GET api/people/5
         [HttpGet("{id}")]
         public IActionResult GetById(long id) => Ok(_personService.FindById(id));
 
-        // POST api/person
+        // POST api/people
         [HttpPost()]
         public IActionResult Post([FromBody]Person person) => new ObjectResult(_personService.Create(person));
 
-        // PUT api/person
+        // PUT api/people
         [HttpPut()]
         public IActionResult Put([FromBody]Person person) => new ObjectResult(_personService.Update(person));
 
-        // DELET api/person/5
+        // DELETE api/people/5
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)
         {
