@@ -6,11 +6,11 @@ namespace RestAspNet.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PersonsController : ControllerBase
+    public class PeopleController : ControllerBase
     {
         private IPersonService _personService;
 
-        public PersonsController(IPersonService personService) => _personService = personService;
+        public PeopleController(IPersonService personService) => _personService = personService;
 
         // GET api/person
         [HttpGet()]
