@@ -1,0 +1,14 @@
+C:\Users\vando\source\repos\01. Estudos\01. Versionados\study_rest_aspnet\RestAspNet 01 - Calculator\RestAspNet\bin\Debug\netcoreapp2.2\RestAspNet.deps.json
+C:\Users\vando\source\repos\01. Estudos\01. Versionados\study_rest_aspnet\RestAspNet 01 - Calculator\RestAspNet\bin\Debug\netcoreapp2.2\RestAspNet.runtimeconfig.json
+C:\Users\vando\source\repos\01. Estudos\01. Versionados\study_rest_aspnet\RestAspNet 01 - Calculator\RestAspNet\bin\Debug\netcoreapp2.2\RestAspNet.runtimeconfig.dev.json
+C:\Users\vando\source\repos\01. Estudos\01. Versionados\study_rest_aspnet\RestAspNet 01 - Calculator\RestAspNet\bin\Debug\netcoreapp2.2\RestAspNet.dll
+C:\Users\vando\source\repos\01. Estudos\01. Versionados\study_rest_aspnet\RestAspNet 01 - Calculator\RestAspNet\bin\Debug\netcoreapp2.2\RestAspNet.pdb
+C:\Users\vando\source\repos\01. Estudos\01. Versionados\study_rest_aspnet\RestAspNet 01 - Calculator\RestAspNet\obj\Debug\netcoreapp2.2\RestAspNet.csprojAssemblyReference.cache
+C:\Users\vando\source\repos\01. Estudos\01. Versionados\study_rest_aspnet\RestAspNet 01 - Calculator\RestAspNet\obj\Debug\netcoreapp2.2\RestAspNet.csproj.CoreCompileInputs.cache
+C:\Users\vando\source\repos\01. Estudos\01. Versionados\study_rest_aspnet\RestAspNet 01 - Calculator\RestAspNet\obj\Debug\netcoreapp2.2\RestAspNet.RazorAssemblyInfo.cache
+C:\Users\vando\source\repos\01. Estudos\01. Versionados\study_rest_aspnet\RestAspNet 01 - Calculator\RestAspNet\obj\Debug\netcoreapp2.2\RestAspNet.RazorAssemblyInfo.cs
+C:\Users\vando\source\repos\01. Estudos\01. Versionados\study_rest_aspnet\RestAspNet 01 - Calculator\RestAspNet\obj\Debug\netcoreapp2.2\RestAspNet.AssemblyInfoInputs.cache
+C:\Users\vando\source\repos\01. Estudos\01. Versionados\study_rest_aspnet\RestAspNet 01 - Calculator\RestAspNet\obj\Debug\netcoreapp2.2\RestAspNet.AssemblyInfo.cs
+C:\Users\vando\source\repos\01. Estudos\01. Versionados\study_rest_aspnet\RestAspNet 01 - Calculator\RestAspNet\obj\Debug\netcoreapp2.2\RestAspNet.RazorTargetAssemblyInfo.cache
+C:\Users\vando\source\repos\01. Estudos\01. Versionados\study_rest_aspnet\RestAspNet 01 - Calculator\RestAspNet\obj\Debug\netcoreapp2.2\RestAspNet.dll
+C:\Users\vando\source\repos\01. Estudos\01. Versionados\study_rest_aspnet\RestAspNet 01 - Calculator\RestAspNet\obj\Debug\netcoreapp2.2\RestAspNet.pdb
