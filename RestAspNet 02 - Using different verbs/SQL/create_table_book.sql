@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS `book` (
+  `id` VARCHAR(127) NOT NULL,
+  `author` LONGTEXT NOT NULL,
+  `launch_date` DATETIME(6) NOT NULL,
+  `price` DECIMAL(65,2) NOT NULL,
+  `title` LONGTEXT NOT NULL,
+  PRIMARY KEY (`id`)
+  )
+  ENGINE=InnoDb DEFAULT CHARSET=latin1;

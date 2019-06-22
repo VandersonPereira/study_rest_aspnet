@@ -26,8 +26,15 @@ namespace RestAspNet.Controllers
 
         // PUT api/people
         [HttpPut()]
-        public IActionResult Put([FromBody]Person person) => new ObjectResult(_personBusiness.Update(person));
+        public IActionResult Put([FromBody]Person person)
+        {
+            var retunrPersonToUpdate = _personBusiness.Update(person);
 
+            if(retunrPersonToUpdate != null)
+                return new ObjectResult(retunrPersonToUpdate);
+
+            return BadRequest("Pessoa não encontrada.");
+        }
         // DELETE api/people/5
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)

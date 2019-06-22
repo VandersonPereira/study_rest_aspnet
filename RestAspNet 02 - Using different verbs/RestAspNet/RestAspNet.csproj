@@ -6,9 +6,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Evolve" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="MySql.Data" Version="8.0.16" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.2.0" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="db\migrations\" />
+    <Folder Include="db\datasets\" />
+  </ItemGroup>
+
+  <Target Name="ChangeAliasesOfStrongNameAssemblies" BeforeTargets="FindRefereceAssembliesForReferences;ResolveReferences">
+    <ItemGroup>
+      <ReferencePath Condition="'%(FileName)' == 'MySqlConnector'">
+        <Aliases>MySqlConnectorAlias</Aliases>
+      </ReferencePath>
+    </ItemGroup>
+  </Target>
 
 </Project>
