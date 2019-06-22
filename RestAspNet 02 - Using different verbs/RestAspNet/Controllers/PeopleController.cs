@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RestAspNet.Models;
-using RestAspNet.Sevices;
+using RestAspNet.Business;
 
 namespace RestAspNet.Controllers
 {
@@ -8,31 +8,31 @@ namespace RestAspNet.Controllers
     [ApiController]
     public class PeopleController : ControllerBase
     {
-        private IPersonService _personService;
+        private IPersonBusiness _personBusiness;
 
-        public PeopleController(IPersonService personService) => _personService = personService;
+        public PeopleController(IPersonBusiness personBusiness) => _personBusiness = personBusiness;
 
         // GET api/people
         [HttpGet()]
-        public IActionResult GetAll() => Ok(_personService.FindAll());
+        public IActionResult GetAll() => Ok(_personBusiness.FindAll());
 
         // GET api/people/5
         [HttpGet("{id}")]
-        public IActionResult GetById(long id) => Ok(_personService.FindById(id));
+        public IActionResult GetById(long id) => Ok(_personBusiness.FindById(id));
 
         // POST api/people
         [HttpPost()]
-        public IActionResult Post([FromBody]Person person) => new ObjectResult(_personService.Create(person));
+        public IActionResult Post([FromBody]Person person) => new ObjectResult(_personBusiness.Create(person));
 
         // PUT api/people
         [HttpPut()]
-        public IActionResult Put([FromBody]Person person) => new ObjectResult(_personService.Update(person));
+        public IActionResult Put([FromBody]Person person) => new ObjectResult(_personBusiness.Update(person));
 
         // DELETE api/people/5
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)
         {
-            _personService.Delete(id);
+            _personBusiness.Delete(id);
             return NoContent();
         }
     }

@@ -4,13 +4,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace RestAspNet.Sevices.Implementations
+namespace RestAspNet.Repository.Implementations
 {
-    public class PersonService : IPersonService
+    public class PersonRepository : IPersonRepository
     {
         private MySqlContext _context;
 
-        public PersonService(MySqlContext context)
+        public PersonRepository(MySqlContext context)
         {
             _context = context;
         }
@@ -68,6 +68,6 @@ namespace RestAspNet.Sevices.Implementations
             return person;
         }
 
-        private bool Exist(long? id) => _context.person.Any(p => p.Id.Equals(id));
+        public bool Exist(long? id) => _context.person.Any(p => p.Id.Equals(id));
     }
 }
