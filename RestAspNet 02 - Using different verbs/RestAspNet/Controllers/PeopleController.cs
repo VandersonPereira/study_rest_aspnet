@@ -8,9 +8,9 @@ namespace RestAspNet.Controllers
     [ApiController]
     public class PeopleController : ControllerBase
     {
-        private IPersonBusiness _personBusiness;
+        private IBookBusiness _personBusiness;
 
-        public PeopleController(IPersonBusiness personBusiness) => _personBusiness = personBusiness;
+        public PeopleController(IBookBusiness personBusiness) => _personBusiness = personBusiness;
 
         // GET api/people
         [HttpGet()]

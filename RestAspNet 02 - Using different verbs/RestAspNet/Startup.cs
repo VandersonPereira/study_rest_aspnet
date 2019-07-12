@@ -63,7 +63,7 @@ namespace RestAspNet
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            services.AddScoped<IPersonBusiness, PersonBusiness>();
+            services.AddScoped<IBookBusiness, PersonBusiness>();
             services.AddScoped<IPersonRepository, PersonRepository>();
         }
 

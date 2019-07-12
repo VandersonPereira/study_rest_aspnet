@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace RestAspNet.Business.Implementations
 {
-    public class PersonBusiness : IPersonBusiness
+    public class PersonBusiness : IBookBusiness
     {
         private IPersonRepository _repository;
 
