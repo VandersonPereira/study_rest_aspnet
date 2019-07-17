@@ -1,19 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using RestAspNet.Business;
+using RestAspNet.Models;
 
 namespace RestAspNet.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BookController : ControllerBase
+    public class BooksController : ControllerBase
     {
         private IBookBusiness _bookBusiness;
 
-        public BookController(IBookBusiness bookBusiness) => _bookBusiness = bookBusiness;
+        public BooksController(IBookBusiness bookBusiness) => _bookBusiness = bookBusiness;
 
         // GET api/people
         [HttpGet()]

@@ -1,21 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using RestAspNet.Models.Context;
 using RestAspNet.Business;
 using RestAspNet.Business.Implementations;
-using RestAspNet.Repository.Implementations;
+using RestAspNet.Models.Context;
 using RestAspNet.Repository;
+using RestAspNet.Repository.Generic;
+using RestAspNet.Repository.Implementations;
+using System;
+using System.Collections.Generic;
 
 namespace RestAspNet
 {
@@ -63,8 +60,12 @@ namespace RestAspNet
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            services.AddScoped<IBookBusiness, PersonBusiness>();
             services.AddScoped<IPersonRepository, PersonRepository>();
+            services.AddScoped<IPersonBusiness, PersonBusiness>();
+
+            services.AddScoped<IBookBusiness, BookBusiness>();
+
+            services.AddScoped(typeof(IGenerciRepository<>), typeof(GenerciRepository<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

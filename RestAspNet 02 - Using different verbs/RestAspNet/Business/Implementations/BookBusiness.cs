@@ -1,44 +1,26 @@
 ﻿using RestAspNet.Models;
-using RestAspNet.Models.Context;
-using RestAspNet.Repository;
-using System;
+using RestAspNet.Repository.Generic;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace RestAspNet.Business.Implementations
 {
     public class BookBusiness : IBookBusiness
     {
-        private IPersonRepository _repository;
+        private IGenerciRepository<Book> _repository;
 
-        public BookBusiness(IPersonRepository repository)
+        public BookBusiness(IGenerciRepository<Book> repository)
         {
             _repository = repository;
         }
 
-        public Person Create(Book book)
-        {
-            throw new NotImplementedException();
-        }
+        public Book Create(Book book) => _repository.Create(book);
 
-        public void Delete(long id)
-        {
-            throw new NotImplementedException();
-        }
+        public void Delete(long id) => _repository.Delete(id);
 
-        public List<Person> FindAll()
-        {
-            throw new NotImplementedException();
-        }
+        public List<Book> FindAll() => _repository.FindAll();
 
-        public Person FindById(long id)
-        {
-            throw new NotImplementedException();
-        }
+        public Book FindById(long id) => _repository.FindById(id);
 
-        public Person Update(Book book)
-        {
-            throw new NotImplementedException();
-        }
+        public Book Update(Book book) => _repository.Update(book);
     }
 }

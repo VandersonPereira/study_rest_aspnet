@@ -1,17 +1,14 @@
 ﻿using RestAspNet.Models;
-using RestAspNet.Models.Context;
-using RestAspNet.Repository;
-using System;
+using RestAspNet.Repository.Generic;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace RestAspNet.Business.Implementations
 {
-    public class PersonBusiness : IBookBusiness
+    public class PersonBusiness : IPersonBusiness
     {
-        private IPersonRepository _repository;
+        private IGenerciRepository<Person> _repository;
 
-        public PersonBusiness(IPersonRepository repository)
+        public PersonBusiness(IGenerciRepository<Person> repository)
         {
             _repository = repository;
         }

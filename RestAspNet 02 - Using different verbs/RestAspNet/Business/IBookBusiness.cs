@@ -5,10 +5,10 @@ namespace RestAspNet.Business
 {
     public interface IBookBusiness
     {
-        Person Create(Book book); 
-        Person FindById(long id); 
-        List<Person> FindAll(); 
-        Person Update(Book book); 
+        Book Create(Book book); 
+        Book FindById(long id); 
+        List<Book> FindAll(); 
+        Book Update(Book book); 
         void Delete(long id); 
     }
 }

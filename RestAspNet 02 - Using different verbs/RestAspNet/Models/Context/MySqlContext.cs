@@ -1,8 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace RestAspNet.Models.Context
 {
@@ -13,5 +9,6 @@ namespace RestAspNet.Models.Context
         public MySqlContext(DbContextOptions<MySqlContext> options) : base(options){}
 
         public DbSet<Person> person { get; set; }
+        public DbSet<Book> book { get; set; }
     }
 }
